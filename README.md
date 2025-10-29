@@ -2,20 +2,7 @@
 **Six Major Leagues · Three Seasons · Calibration/Anomaly Analysis**
 
 ## Project Overview
-Public debate around football often includes claims that **referees influence outcomes** or that **major teams underperform intentionally** in coordination with betting markets. This project does **not** attempt to prove intent or wrongdoing. Instead, it asks a narrower, testable question:
+Nowadays, we hear many speculations about referees and major football teams across leagues worldwide. Some say referees manipulate matches in their favor, while others claim that teams lose intentionally in collaboration with betting companies. To gain insight into these public debates, I decided to base my project on this topic.
+**Aim of the project:** I will collect match result data from the six major leagues over three seasons and pair it with information about the most frequently placed bets. Because there is no direct public data on betting volumes, I will estimate “heavily backed” sides using related datasets—specifically, pre-match odds and their movement—so that I can test whether market expectations align with actual outcomes.
 
-> **Do sides that appear to be *heavily backed before kick-off* underperform relative to their market-implied (vig-free) winning probabilities?**
 
-Because true staking/volume data (“most performed bets”) is rarely public, the project **approximates heavily backed sides using odds movement** from opening to closing prices (aggregated across bookmakers). We then compare realized outcomes to the market’s final implied probabilities and quantify any **calibration gaps / statistical anomalies** at match, team, league, and season levels.
-
-## Scope
-- **Leagues:** Premier League, La Liga, Serie A, Bundesliga, Ligue 1, Süper Lig  
-- **Seasons:** Three consecutive seasons (e.g., 2021–22, 2022–23, 2023–24)  
-- **Market:** Pre-match **1X2** (win/draw/win); extensions (O/U, BTTS) may be considered later.
-
-## Data Sources (to be added by the user)
-- **Match results + closing odds:** football-data.co.uk mirrors available on open data portals/Kaggle.
-- **Opening & time-series odds:** Kaggle datasets that track pre-match odds across time (used to compute opening probabilities and odds movement).
-> The repository will reference sources; users must download data per original licenses.
-
-## What We Wi
