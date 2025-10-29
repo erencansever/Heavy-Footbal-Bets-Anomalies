@@ -1,67 +1,21 @@
-# News and S&P 500: Exploring the correlations Between Headlines and Market Moves
+# Heavy-Bet Anomaly Study — Football Odds vs Results  
+**Six Major Leagues · Three Seasons · Calibration/Anomaly Analysis**
 
-This project analyzes whether daily news headlines (Kaggle **Daily News for Stock Market Prediction**) contain signals about the **S&P 500**’s same-day or next-day movements, using **machine learning** and **visualizations**.
+## Project Overview
+Public debate around football often includes claims that **referees influence outcomes** or that **major teams underperform intentionally** in coordination with betting markets. This project does **not** attempt to prove intent or wrongdoing. Instead, it asks a narrower, testable question:
 
----
+> **Do sides that appear to be *heavily backed before kick-off* underperform relative to their market-implied (vig-free) winning probabilities?**
 
-## Project Purpose
+Because true staking/volume data (“most performed bets”) is rarely public, the project **approximates heavily backed sides using odds movement** from opening to closing prices (aggregated across bookmakers). We then compare realized outcomes to the market’s final implied probabilities and quantify any **calibration gaps / statistical anomalies** at match, team, league, and season levels.
 
-- Quantify the relationship between headline text (sentiment, topics, keywords) and **S&P 500** returns.
-- Convert text to numerical features and evaluate their explanatory/predictive power for **direction** and **magnitude** of market moves.
-- Present findings through clear, reproducible analyses and **visualizations** (time-series overlays, correlation heatmaps, feature importances).
+## Scope
+- **Leagues:** Premier League, La Liga, Serie A, Bundesliga, Ligue 1, Süper Lig  
+- **Seasons:** Three consecutive seasons (e.g., 2021–22, 2022–23, 2023–24)  
+- **Market:** Pre-match **1X2** (win/draw/win); extensions (O/U, BTTS) may be considered later.
 
----
+## Data Sources (to be added by the user)
+- **Match results + closing odds:** football-data.co.uk mirrors available on open data portals/Kaggle.
+- **Opening & time-series odds:** Kaggle datasets that track pre-match odds across time (used to compute opening probabilities and odds movement).
+> The repository will reference sources; users must download data per original licenses.
 
-## Why This Project?
-
-- **Hypothesis:** News sentiment and certain themes may provide **weak yet measurable** short-term signals for the index.
-- **Motivation:** Turn unstructured news into repeatable, data-driven features to examine the **news → price** link transparently.
-- **Contribution:** A reproducible research pipeline that addresses the classic question: *“Do headlines move the market in the short run?”*
-
----
-
-## Research Questions
-
-1. Is there a significant relationship between **headline sentiment/tonality** and **daily S&P 500 returns**?
-2. Do specific **topics/keyword clusters** correlate with **up/down** outcomes?
-3. Can simple text features (e.g., TF-IDF, sentiment scores) with basic ML models meaningfully outperform a **naive baseline**?
-4. How stable are these relationships **over time** (market regimes, news cycles)?
-
----
-
-## Approach (Overview)
-
-- **Data**
-  - Headlines: Kaggle **Daily News for Stock Market Prediction** (date + headline).
-  - Market: Daily **S&P 500** prices/returns aligned to the same calendar.
-- **Preprocessing**
-  - Date alignment, handling missing days, text cleaning (lowercasing, punctuation, stopwords).
-- **Feature Engineering**
-  - TF-IDF / bag-of-words, sentiment scores, optional topic modeling.
-- **Modeling**
-  - Classification of **up vs. down** (logistic regression, tree/boosting baselines).
-  - Evaluation with time-aware splits: **Accuracy**, **F1**, **ROC-AUC**, vs **naive baseline**.
-- **Visualization**
-  - Time-series overlays, correlation heatmaps, feature importances, sentiment-return distributions.
-
----
-
-## Expected Outcomes
-
-- A concise report and plots summarizing **where** the link is strong/weak.
-- Clean, step-by-step code for **reproducibility**.
-- A data-driven perspective on *how much* headlines help for short-term index direction.
-
----
-
-## Limitations & Notes
-
-- Headlines are noisy and context-limited; relationships are often **weak** and **regime-dependent**.
-- This is for **research/education** only — **not investment advice**.
-- Performance depends heavily on the date range, label definition, and feature engineering choices.
-
----
-
-## License
-
-Code and documentation are intended for research and education. The specific license will be added in the initial release.
+## What We Wi
