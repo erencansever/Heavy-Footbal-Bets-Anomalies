@@ -1,6 +1,16 @@
 # Heavy-Bet Anomaly Study — Football Odds vs Results  
 **Six Major Leagues · Three Seasons · Calibration/Anomaly Analysis**
 
+
+## Contents
+
+- Project Overview  
+- Motivation  
+- Data Sources  
+- Research Questions & Hypotheses  
+- Methodology  
+- Analysis Plan
+
 ---
 
 ## Project Overview
