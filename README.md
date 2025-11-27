@@ -59,7 +59,7 @@ The relationship between betting market expectations and actual football match o
 
 This dataset is clean, standardized, and covers major European leagues.
 
---
+
 
 ### 2. Beat-the-Bookie Worldwide Football Dataset
 
@@ -91,7 +91,7 @@ This dataset fills the gap that Football-Data.co.uk lacks (closing odds).
 - Removed rows with missing or inconsistent odds values (e.g., missing home/draw/away odds).  
 - Eliminated impossible or erroneous entries such as negative odds or matches duplicated across bookmakers.  
 
----
+
 
 ### 2. Aggregation & Integration
 
@@ -105,7 +105,7 @@ This dataset fills the gap that Football-Data.co.uk lacks (closing odds).
   - league metadata  
 - Ensured bookmaker-level odds were aggregated appropriately (e.g., averaging across bookmakers when needed).  
 
----
+
 
 ### 3. Feature Engineering
 
@@ -122,7 +122,7 @@ This dataset fills the gap that Football-Data.co.uk lacks (closing odds).
   - `OutcomeCorrectness` (whether the market-predicted favorite actually won)  
 - Normalized numeric columns for machine learning models and encoded categorical variables (teams, leagues).  
 
----
+
 
 ### 4. Data Enrichment
 
