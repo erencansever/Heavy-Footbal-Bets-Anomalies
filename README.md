@@ -81,6 +81,62 @@ This dataset is clean, standardized, and covers major European leagues.
 This dataset fills the gap that Football-Data.co.uk lacks (closing odds).
 
 ---
+## Data Collection and Preparation
+
+### 1. Data Cleaning
+
+- Standardized team names across both datasets to ensure accurate merging.  
+- Converted all date fields to a consistent `datetime` format.  
+- Filtered matches to include only the six major European leagues and the selected three seasons.  
+- Removed rows with missing or inconsistent odds values (e.g., missing home/draw/away odds).  
+- Eliminated impossible or erroneous entries such as negative odds or matches duplicated across bookmakers.  
+
+---
+
+### 2. Aggregation & Integration
+
+- **Football-Data.co.uk:** Extracted match results and opening odds as the base dataset.  
+- **Beat-the-Bookie:** Extracted multi-bookmaker opening and closing odds to capture line movement.  
+- Created a canonical match index using *(date, home team, away team)* as the join key.  
+- Merged datasets on this index to produce a unified structure containing:  
+  - match results  
+  - opening odds  
+  - closing odds  
+  - league metadata  
+- Ensured bookmaker-level odds were aggregated appropriately (e.g., averaging across bookmakers when needed).  
+
+---
+
+### 3. Feature Engineering
+
+- Computed **vig-free implied probabilities** for both opening and closing odds.  
+- Calculated **line movement** features:  
+  - ΔOdds (closing − opening)  
+  - ΔProbability (closing_prob − opening_prob)  
+- Identified the **heavily-backed side** as the outcome with the largest positive probability shift.  
+- Created binary classification targets:  
+  - `HeavySide_Won` (1 if heavily-backed side wins, else 0)  
+- Generated additional match-level features such as  
+  - `IsFavorite`  
+  - `FavoriteProbabilityGap`  
+  - `OutcomeCorrectness` (whether the market-predicted favorite actually won)  
+- Normalized numeric columns for machine learning models and encoded categorical variables (teams, leagues).  
+
+---
+
+### 4. Data Enrichment
+
+- Integrated bookmaker metadata to examine pricing consistency across firms.  
+- Added league-level contextual variables (e.g., average goals per league per season).  
+- Derived match difficulty indicators such as  
+  - relative team strength (computed through rolling win percentages).  
+- Enriched the dataset with temporal features:  
+  - `Season`  
+  - `Matchday`  
+  - `WeekOfYear`  
+- Resulted in a more comprehensive dataset suitable for calibration studies, statistical testing, and ML modeling.  
+
+---
 
 ## Research Questions & Hypotheses
 
