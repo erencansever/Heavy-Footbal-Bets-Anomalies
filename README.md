@@ -2,31 +2,20 @@
 **Six Major Leagues · Three Seasons · Calibration/Anomaly Analysis**
 
 ## Project Overview
-This project explores the relationship between betting market expectations and real match outcomes in major European football leagues. Motivated by the widespread speculations about referees, match fairness, and potential market manipulation, the project aims to investigate how strongly-backed teams perform relative to the probabilities implied by bookmaker odds.
+This project explores the relationship between betting market expectations and real match outcomes in 5 major European football leagues to look for an answer to the widespread speculations about rigged referees, match fairness, and potential suspicious matches, the project aims to investigate how strongly-backed teams perform relative to the probabilities implied by bookmaker odds.
 
-Using multi-season, real-world football datasets, I examine whether teams that experience significant support in the betting markets—measured through opening and closing odds movement—tend to meet, exceed, or underperform their expected probabilities. Since actual bet volume is not publicly available, line movement serves as a practical proxy for identifying the “heavily-backed side.”
+Using multi season, real world football datasets, we try to examine whether teams that experience significant support in the betting markets (measured through opening and closing odds movement) tend to meet, exceed, or underperform their expected probabilities. Since actual bet volume is not publicly available, line movement serves as a practical proxy for identifying the “heavily-backed side.”
 
 The central research question is: **"Do teams that receive strong betting market support before kick-off underperform relative to their final implied probabilities?"**
 
 To answer this, the project conducts an end-to-end analysis pipeline:
-- Collecting match results from the six major European leagues across three consecutive seasons,  
-- Merging them with multi-bookmaker opening and closing odds,  
-- Converting odds into vig-free implied probabilities,  
+- Collecting match results from the five major European leagues across three consecutive seasons,  
+- Merging them with bookmaker opening and closing odds,  
+- Converting odds into implied probabilities,  
 - Identifying matches with significant line movement,  
 - Performing calibration tests and anomaly detection to compare expected vs. actual outcomes.
 
 The aim is not to confirm wrongdoing or intentional underperformance, but rather to provide a systematic, transparent, and reproducible statistical assessment. By grounding the discussion in data—rather than anecdotes or sensational claims—the project seeks to offer clearer insight into how well betting markets anticipate real match results and whether heavily-backed teams deviate meaningfully from market expectations.
-
-**Data Collection** 
-
-
-# DSA210-FootballBettingMarketProject
-
-Comparative analysis of football betting markets using opening & closing odds, market efficiency tests, and line-movement–based behavioral indicators.  
-A data science project investigating heavy-bet anomalies, bookmaker calibration, and probability distortions across major European football leagues.  
-DSA210 Term Project.
-
----
 
 ## Contents
 
