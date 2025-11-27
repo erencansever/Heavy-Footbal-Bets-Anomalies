@@ -36,17 +36,9 @@ The aim is not to confirm wrongdoing or intentional underperformance, but rather
 
 The relationship between betting market expectations and actual football match outcomes has become an increasingly relevant topic in sports analytics. As a data science enthusiast with a strong interest in football-related behavioral patterns, I am motivated to explore this issue through rigorous, data-driven methods rather than public speculation. Understanding how odds evolve, how bettors collectively react to information, and whether these reactions align with real performance can provide valuable insights into market efficiency, forecasting accuracy, and potential biases. Such analysis not only contributes to a more objective understanding of match expectations, but also helps inform broader discussions about transparency, fairness, and the reliability of market-based predictions in modern football.
 
----
+
 
 ## Data Sources
-
-### *Dataset 1: Football Match Results & Opening Odds*
-'''Name: Football-Data.co.uk (Kaggle Mirror)'''
-Source: Kaggle.com
-Link: https://www.kaggle.com/datasets/jamieandrews/footballdatacouk
-Data Acquisition Method: Downloaded directly from Kaggle using the dataset’s built-in export feature (CSV format).
-
----
 
 ### 1. Football-Data.co.uk Dataset (Kaggle Mirror)
 
@@ -87,29 +79,6 @@ This dataset is clean, standardized, and covers major European leagues.
 - Used to test market efficiency and bias
 
 This dataset fills the gap that Football-Data.co.uk lacks (closing odds).
-
----
-
-### Why two datasets?
-
-These datasets complement each other:
-
-| Component              | Football-Data | Beat-the-Bookie |
-|------------------------|---------------|------------------|
-| Match results          | ✔             | ✔ (but less clean) |
-| Opening odds           | ✔             | ✔ |
-| Closing odds           | ❌            | ✔ |
-| League consistency     | Excellent     | Good |
-| Use in project         | Base data     | Line movement + efficiency |
-
-Using both ensures that the final merged dataset includes:
-
-- match results  
-- opening odds  
-- closing odds  
-- vig-free implied probabilities  
-- line movement  
-- heavy-bet indicators  
 
 ---
 
