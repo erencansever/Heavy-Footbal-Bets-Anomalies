@@ -1,6 +1,8 @@
 # Heavy-Bet Anomaly Study — Football Odds vs Results  
 **Six Major Leagues · Three Seasons · Calibration/Anomaly Analysis**
 
+---
+
 ## Project Overview
 This project explores the relationship between betting market expectations and real match outcomes in 5 major European football leagues to look for an answer to the widespread speculations about rigged referees, match fairness, and potential suspicious matches, the project aims to investigate how strongly-backed teams perform relative to the probabilities implied by bookmaker odds.
 
@@ -17,6 +19,7 @@ To answer this, the project conducts an end-to-end analysis pipeline:
 
 The aim is not to confirm wrongdoing or intentional underperformance, but rather to provide a systematic, transparent, and reproducible statistical assessment. By grounding the discussion in data—rather than anecdotes or sensational claims—the project seeks to offer clearer insight into how well betting markets anticipate real match results and whether heavily-backed teams deviate meaningfully from market expectations.
 
+---
 ## Contents
 
 - Project Overview  
@@ -26,21 +29,6 @@ The aim is not to confirm wrongdoing or intentional underperformance, but rather
 - Methodology  
 - Analysis Plan  
 
----
-
-## Project Overview
-
-This project aims to examine the behavior, efficiency, and hidden patterns within football betting markets by comparing **opening and closing bookmaker odds**, analyzing **line movement**, and testing whether the “heavily-backed” side exhibits systematic bias or underperformance.
-
-By combining match results with multi-bookmaker opening/closing odds, the project investigates:
-
-- how betting markets adjust probabilities prior to kickoff,  
-- whether odds movements reflect meaningful information,  
-- and if certain teams, leagues, or match situations systematically distort market expectations.
-
-Using data analysis, visualization, and statistical hypothesis testing, the project seeks to provide data-driven insights into the dynamics of sports betting markets—especially focusing on **market efficiency**, **anomaly detection**, and **behavioral patterns of bettors**.
-
----
 
 ## Motivation
 
