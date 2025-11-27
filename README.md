@@ -1,6 +1,7 @@
 # Heavy-Bet Anomaly Study — Football Odds vs Results  
 **Six Major Leagues · Three Seasons · Calibration/Anomaly Analysis**
 
+---
 
 ## Contents
 
@@ -14,7 +15,7 @@
 ---
 
 ## Project Overview
-This project explores the relationship between betting market expectations and real match outcomes in 5 major European football leagues to look for an answer to the widespread speculations about rigged referees, match fairness, and potential suspicious matches, the project aims to investigate how strongly-backed teams perform relative to the probabilities implied by bookmaker odds.
+This project explores the relationship between betting market expectations and real match outcomes in 5 major European football leagues to look for an answer to the widespread speculations about rigged referees, match fairness, and potential suspicious matches, the project aims to investigate how "stronger" teams perform relative to the bookmaker odds.
 
 Using multi season, real world football datasets, we try to examine whether teams that experience significant support in the betting markets (measured through opening and closing odds movement) tend to meet, exceed, or underperform their expected probabilities. Since actual bet volume is not publicly available, line movement serves as a practical proxy for identifying the “heavily-backed side.”
 
@@ -30,44 +31,20 @@ To answer this, the project conducts an end-to-end analysis pipeline:
 The aim is not to confirm wrongdoing or intentional underperformance, but rather to provide a systematic, transparent, and reproducible statistical assessment. By grounding the discussion in data—rather than anecdotes or sensational claims—the project seeks to offer clearer insight into how well betting markets anticipate real match results and whether heavily-backed teams deviate meaningfully from market expectations.
 
 ---
-## Contents
-
-- Project Overview  
-- Motivation  
-- Data Sources  
-- Research Questions & Hypotheses  
-- Methodology  
-- Analysis Plan  
-
 
 ## Motivation
 
-I am working on this project because football betting markets provide a rich environment for studying **probability estimation**, **market reactions**, and **collective behavior of bettors**.
-
-While betting odds are often assumed to be efficient predictors, practical applications reveal several interesting questions:
-
-- Are opening odds unbiased predictors of match outcomes?  
-- How much does the market update before kickoff, and is this update rational?  
-- Does a strong line movement (“heavy betting”) actually predict better performance, or do bettors systematically overreact?
-
-Understanding whether markets behave rationally or exhibit biases can contribute to:
-
-### Market Efficiency Analysis
-Evaluating whether implied probabilities match actual win percentages.
-
-### Behavioral Finance Perspective
-Studying how bettors respond to information, narratives, and team reputation.
-
-### Risk and Forecasting Applications
-Understanding calibration and bias helps build more accurate prediction models.
-
-By performing a quantitative analysis of these relationships, the project connects sports analytics, behavioral economics, and data science.
+The relationship between betting market expectations and actual football match outcomes has become an increasingly relevant topic in sports analytics. As a data science enthusiast with a strong interest in football-related behavioral patterns, I am motivated to explore this issue through rigorous, data-driven methods rather than public speculation. Understanding how odds evolve, how bettors collectively react to information, and whether these reactions align with real performance can provide valuable insights into market efficiency, forecasting accuracy, and potential biases. Such analysis not only contributes to a more objective understanding of match expectations, but also helps inform broader discussions about transparency, fairness, and the reliability of market-based predictions in modern football.
 
 ---
 
 ## Data Sources
 
-I use two complementary datasets that together provide all the components needed for market analysis.
+### *Dataset 1: Football Match Results & Opening Odds*
+'''Name: Football-Data.co.uk (Kaggle Mirror)'''
+Source: Kaggle.com
+Link: https://www.kaggle.com/datasets/jamieandrews/footballdatacouk
+Data Acquisition Method: Downloaded directly from Kaggle using the dataset’s built-in export feature (CSV format).
 
 ---
 
