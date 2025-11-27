@@ -2,9 +2,20 @@
 **Six Major Leagues · Three Seasons · Calibration/Anomaly Analysis**
 
 ## Project Overview
-Nowadays, we hear many speculations about referees and major football teams across leagues worldwide. Some argue that referees influence matches in their favor; others claim that certain teams may underperform intentionally in coordination with betting companies. These claims are often amplified by high-profile incidents and social media discussions, but they rarely come with systematic evidence. To bring a more objective perspective to this debate, I decided to examine the relationship between market expectations before kick-off and what actually happens on the pitch.
+This project explores the relationship between betting market expectations and real match outcomes in major European football leagues. Motivated by the widespread speculations about referees, match fairness, and potential market manipulation, the project aims to investigate how strongly-backed teams perform relative to the probabilities implied by bookmaker odds.
 
-**Aim of the project:** I will collect match result data from the six major leagues over three consecutive seasons and pair it with information that approximates the “most frequently placed bets.” Because direct betting volume data is not publicly available, I will estimate heavily backed sides using related datasets—specifically, pre-match odds and their movement from opening to closing lines, converted to vig-free implied probabilities. This approach will allow me to test whether teams that the market appears to back strongly tend to underperform relative to their final implied probabilities. The goal is not to prove intent or wrongdoing, but to produce a transparent, reproducible calibration/anomaly analysis with clear limitations and uncertainty reporting, helping to inform the broader discussion with data rather than anecdotes.
+Using multi-season, real-world football datasets, I examine whether teams that experience significant support in the betting markets—measured through opening and closing odds movement—tend to meet, exceed, or underperform their expected probabilities. Since actual bet volume is not publicly available, line movement serves as a practical proxy for identifying the “heavily-backed side.”
+
+The central research question is: **"Do teams that receive strong betting market support before kick-off underperform relative to their final implied probabilities?"**
+
+To answer this, the project conducts an end-to-end analysis pipeline:
+- Collecting match results from the six major European leagues across three consecutive seasons,  
+- Merging them with multi-bookmaker opening and closing odds,  
+- Converting odds into vig-free implied probabilities,  
+- Identifying matches with significant line movement,  
+- Performing calibration tests and anomaly detection to compare expected vs. actual outcomes.
+
+The aim is not to confirm wrongdoing or intentional underperformance, but rather to provide a systematic, transparent, and reproducible statistical assessment. By grounding the discussion in data—rather than anecdotes or sensational claims—the project seeks to offer clearer insight into how well betting markets anticipate real match results and whether heavily-backed teams deviate meaningfully from market expectations.
 
 **Data Collection** 
 
