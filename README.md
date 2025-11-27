@@ -12,7 +12,7 @@
 - Methodology  
 - Analysis Plan
 
---
+---
 
 ## Project Overview
 This project explores the relationship between betting market expectations and real match outcomes in 5 major European football leagues to look for an answer to the widespread speculations about rigged referees, match fairness, and potential suspicious matches, the project aims to investigate how "stronger" teams perform relative to the bookmaker odds.
@@ -36,7 +36,7 @@ The aim is not to confirm wrongdoing or intentional underperformance, but rather
 
 The relationship between betting market expectations and actual football match outcomes has become an increasingly relevant topic in sports analytics. As a data science enthusiast with a strong interest in football-related behavioral patterns, I am motivated to explore this issue through rigorous, data-driven methods rather than public speculation. Understanding how odds evolve, how bettors collectively react to information, and whether these reactions align with real performance can provide valuable insights into market efficiency, forecasting accuracy, and potential biases. Such analysis not only contributes to a more objective understanding of match expectations, but also helps inform broader discussions about transparency, fairness, and the reliability of market-based predictions in modern football.
 
-
+---
 
 ## Data Sources
 
@@ -59,7 +59,7 @@ The relationship between betting market expectations and actual football match o
 
 This dataset is clean, standardized, and covers major European leagues.
 
----
+--
 
 ### 2. Beat-the-Bookie Worldwide Football Dataset
 
