@@ -12,7 +12,7 @@
 - Methodology  
 - Analysis Plan
 
----
+--
 
 ## Project Overview
 This project explores the relationship between betting market expectations and real match outcomes in 5 major European football leagues to look for an answer to the widespread speculations about rigged referees, match fairness, and potential suspicious matches, the project aims to investigate how "stronger" teams perform relative to the bookmaker odds.
